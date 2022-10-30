@@ -1,8 +1,8 @@
 const { devlopmentChains } = require("../helper-hardhat-config");
 const { network } = require("hardhat");
 
-const DECIMALS = "5";
-const INITIAL_PRICE = "200000000"; // 2000
+const DECIMALS = "8";
+const INITIAL_PRICE = "200000000000"; // 2000
 //部署本地预言机合约
 module.exports = async (hre) => {
     const { getNamedAccounts, deployments } = hre;
