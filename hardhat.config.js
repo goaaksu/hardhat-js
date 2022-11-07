@@ -1,9 +1,9 @@
-require("dotenv").config();
-require("@nomiclabs/hardhat-etherscan");
-require("@nomiclabs/hardhat-waffle");
-require("hardhat-gas-reporter");
-require("solidity-coverage");
-require("hardhat-deploy"); //hardhat自动部署合约插件,不需要单独写deploy.js了
+require("dotenv").config()
+require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-waffle")
+require("hardhat-gas-reporter")
+require("solidity-coverage")
+require("hardhat-deploy") //hardhat自动部署合约插件,不需要单独写deploy.js了
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -24,7 +24,7 @@ module.exports = {
             chainId: 5,
             blockConfirmations: 2,
         },
-        localnetwork: {
+        localhost: {
             //本地链或默认链不需要配置私钥
             url: "http://127.0.0.1:8545",
             chainId: 31337,
@@ -54,4 +54,4 @@ module.exports = {
     etherscan: {
         apiKey: process.env.ETHERSCAN_API_KEY,
     },
-};
+}
